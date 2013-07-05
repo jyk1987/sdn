@@ -1,0 +1,9 @@
+﻿源码来自BeITMemcached 2009_02_27。请遵循http://www.opensource.org/licenses/mit-license.php 协议的规范
+配置
+ configSections节点里面增加
+ <section name="sdnmemcached" type="System.Configuration.NameValueSectionHandler" />
+ 在跟节点(configuration)
+ 内增加
+<sdnmemcached>
+	<add key="default" value="127.0.0.1:11211" />
+</sdnmemcached>
